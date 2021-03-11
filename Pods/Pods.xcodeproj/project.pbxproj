@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		01E6D4389EC3D788ECAD124D0EAE0F56 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D3922F4DB6A254EC0C73BCC952D04D87 /* UIProgressView+AFNetworking.m */; };
+		031A168625FABC4800B50F27 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031A168525FABC4800B50F27 /* CoreServices.framework */; };
 		065999EBC5A9946EB3E196CDFC4A105D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B462ECFD5CC25B2ED526DFC3B1C052 /* Alamofire.framework */; };
 		0B845742F5129AE1B41DCBFAEFD36489 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9D97D83BD932F715108686F4DF22D /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C4F333EB35DA96E5D5388611B83BFA0 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F5F047291E675D8F8D767513EC960 /* AFURLSessionManager.m */; };
@@ -144,6 +145,7 @@
 
 /* Begin PBXFileReference section */
 		00D1F46C528D3437ED4DBDA93A0C3F99 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		031A168525FABC4800B50F27 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		04099E5876DF62A4EEAD42BA325F73AB /* BDBOAuth1Manager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BDBOAuth1Manager.modulemap; sourceTree = "<group>"; };
 		045C59EC25FB213EE90117960A71AA01 /* AlamofireImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AlamofireImage.modulemap; sourceTree = "<group>"; };
 		0582DF14AA2EC47CB4CF67CB5018B877 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3896AEE03DED0805E2EBB8247CAA322E /* CoreGraphics.framework in Frameworks */,
+				031A168625FABC4800B50F27 /* CoreServices.framework in Frameworks */,
 				1D3E94F63FDC6E189AD0FD24CCDD2B41 /* Foundation.framework in Frameworks */,
 				A59301B048725931AD8366DAFBABB6E1 /* MobileCoreServices.framework in Frameworks */,
 				1A73F528427B197C94E28BE4FE8E8497 /* Security.framework in Frameworks */,
@@ -418,6 +421,7 @@
 		AA076697F6E101B1542A1514540D86B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				031A168525FABC4800B50F27 /* CoreServices.framework */,
 				8FDF5CF4C56136E5027670739943F4F9 /* AFNetworking.framework */,
 				59B462ECFD5CC25B2ED526DFC3B1C052 /* Alamofire.framework */,
 				908455D26C66F3F98F72350E9E7C933A /* iOS */,
@@ -756,6 +760,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					C9778AE8394BE451567650E0B239BA21 = {
+						LastSwiftMigration = 1240;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -1108,7 +1117,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1144,7 +1153,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
